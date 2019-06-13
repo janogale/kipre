@@ -23,11 +23,10 @@ mainDiv.addEventListener('click', (e) => {
   let discount = parseInt(productPrice.slice(1)) * 10 / 100;
   oldPrice.innerHTML = parseInt(productPrice.slice(1)) + discount;
 
-
+  // replace Modal image with the clicked Image.
   if (e.target.nodeName == 'IMG') {
     var img = e.target.src;
     modalImg.src = img
   }
 
-  //modalDiv.style.display = "block";
 })
